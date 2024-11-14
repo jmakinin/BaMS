@@ -1,0 +1,28 @@
+{
+    "directories": {
+        "output": "dist",
+        "buildResources": "build"
+    },
+    "appId": "com.bams.mdconsultancy",
+    "files": {
+        "filter": [
+            "dist-electron",
+            "dist-views"
+        ]
+    },
+    "icon": "./bamsIcon.png",
+    "mac": {
+        "target": "dmg"
+    },
+    "linux": {
+        "target": "AppImage",
+        "category": "Utility"
+    },
+    "win": {
+        "target": [
+            "portable",
+            "msi"
+        ]
+    },
+    "electronVersion": "33.2.0"
+}
