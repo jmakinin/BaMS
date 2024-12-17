@@ -1,6 +1,7 @@
 import { app, BrowserWindow } from 'electron';
 import path from 'path'
 import { isDev } from './util.js';
+//import { pollResources } from './resourceManager.js';
 
 const devURL: string = 'http://localhost:5123'
 const prodURL: string = '/dist-views/index.html'
@@ -13,5 +14,7 @@ app.on("ready", () => {
     else {
         mainWindow.loadFile(path.join(app.getAppPath() + prodURL))
     }
+
+    //pollResources();
 
 });
